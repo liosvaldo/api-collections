@@ -15,4 +15,14 @@ fun main(){
 
     println(repositorio.findById(joao.nome))
 
+    println("+++++++++++++++++++++++++++++")
+
+    repositorio.findAll().forEach{println(it)}
+
+    println("+++++++++++++++++++++++++++++")
+
+    println(repositorio.remove(maria.nome))
+    repositorio.findAll().forEach{println(it)}
+
+
 }
