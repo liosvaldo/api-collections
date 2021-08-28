@@ -2,7 +2,7 @@ package one.digitalinovation.collections
 
 fun main(){
 
-    val joao = Funcionario("joao", 1000.00)
+    val joao = Funcionario("joao", 5000.00)
 
     val pedro = Funcionario("pedro", 2000.00)
 
@@ -12,6 +12,9 @@ fun main(){
     funcionarios.forEach { println(it) }
     println("+++++++++++++++++++++++++++++")
     println(funcionarios.find{it.nome == "maria"})
+
+    println("_____________________")
+    funcionarios.sortedBy { it.salario }.forEach{println(it)}
 }
 
 data class Funcionario(
